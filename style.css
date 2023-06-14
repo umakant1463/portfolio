@@ -1,0 +1,122 @@
+/* define global and root variables */
+:root {
+    --primarycolor :#213555;
+    --backgroundcolor :#F5EFE7;
+    --primaryAccent :#D8C4B6;
+    --secondarycolor :#4F709C;
+    --whitecolor :white;
+    --blackcolor :black;
+    --primaryfont :'poppins',poppins;
+    --navbarHeight: 3rem;
+    --cursivefont: 'Lobster',cursive;
+
+}
+
+/* main css */
+body {
+    background-color: var(--backgroundcolor);
+    color: var(--primarycolor);
+    font-family: var(--primaryfont);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primarycolor);
+}
+
+a:hover{
+    color: var(--primaryAccent);
+}
+
+
+.navigations {
+    background-color: var(--whitecolor);
+    height: var(--navbarHeight);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    padding-left: 20px;
+    width: 12rem;
+    align-items: center;
+}
+
+.logoimage{
+    padding: 8px;
+    height: 2rem;
+    /* float: left; */
+}
+
+
+.contactimage{
+    padding: 8px;
+    height: 2rem;
+    margin-right: 40px;
+}
+
+.menueitems {
+    flex-grow: 2;
+
+}
+.menueitem{
+    margin-left: 20px;
+}
+
+.bannerleft{
+    width: 50%;
+}
+.banner{
+    display: flex;
+    height: 450px;
+    background: linear-gradient(45deg,var(--primaryAccent),var(--secondarycolor),var(--primaryAccent),var(--secondarycolor),var(--primarycolor) );
+        /* background-color:var(--secondarycolor); */
+        /* x y radious colour */
+        filter: drop-shadow(0px 5px 10px gray);  
+        justify-content: space-around;
+        align-items: center;
+}
+.bannerpicture{
+    height: 300px;
+    border-radius: 100%;
+}
+
+.greeting{
+    font-family: var(--cursivefont);
+    font-size: 2.25rem;
+}
+
+.title{
+    font-size: 2.5rem;
+    color: var(--whitecolor);
+}
+
+.titlespan{
+    background-color: var(--primarycolor);
+    padding: 0.5rem;
+    display: inline-block;
+    margin: 5px 0px;
+}
+
+.description{
+   color: var(--blackcolor);
+   margin: 30px 0px;
+   line-height: 1.5rem;
+}
+
+.showCVbutton{
+    background: linear-gradient(white,rgb(174, 146, 225),rgb(129, 66, 188),rgb(70, 44, 125));
+    padding: 10px 15px;
+    border-radius: 5%;
+    filter: drop-shadow(5px 5px 3px gray);
+}
+.showCVbutton:hover{
+    background: linear-gradient(white,rgb(215,215,215));
+}
+
