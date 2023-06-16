@@ -46,6 +46,7 @@ a:hover{
     padding-left: 20px;
     width: 12rem;
     align-items: center;
+    font-family: var(--cursivefont);
 }
 
 .logoimage{
@@ -75,7 +76,7 @@ a:hover{
 .banner{
     display: flex;
     height: 450px;
-    background: linear-gradient(45deg,var(--primaryAccent),var(--secondarycolor),var(--primaryAccent),var(--secondarycolor),var(--primarycolor) );
+    background: linear-gradient(45deg,var(--primarycolor),var(--secondarycolor),var(--primaryAccent),var(--secondarycolor),var(--primarycolor) );
         /* background-color:var(--secondarycolor); */
         /* x y radious colour */
         filter: drop-shadow(0px 5px 10px gray);  
@@ -111,12 +112,81 @@ a:hover{
 }
 
 .showCVbutton{
-    background: linear-gradient(white,rgb(174, 146, 225),rgb(129, 66, 188),rgb(70, 44, 125));
+    background: linear-gradient(45deg,var(--primarycolor),var(--secondarycolor),rgb(113, 116, 177),var(--secondarycolor),var(--primarycolor));
     padding: 10px 15px;
     border-radius: 5%;
+    color: var(--blackcolor);
     filter: drop-shadow(5px 5px 3px gray);
 }
 .showCVbutton:hover{
-    background: linear-gradient(white,rgb(215,215,215));
+    background: linear-gradient(rgb(104, 154, 186));
 }
 
+
+/* services section */
+
+
+
+.services{
+    margin: 5rem;
+    /* padding: 30px; */
+}
+
+.servicetext{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.servicetextsubheading{
+    color: var(--primarycolor);
+    letter-spacing: 0.3rem;
+    font-size: 1.25rem;
+}
+
+.servicetextheading{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.servicecards{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.servicecard{
+    /* background-color: white; */
+    border: 2px solid grey;
+    border-radius: 2px;
+    filter: drop-shadow(1px 1px 2px #aaaaaa);
+    /* margin: 15px; */
+    padding: 40px;
+}
+
+.servicecard:hover{
+    border: none;
+    background-color: var(--whitecolor);
+    filter: drop-shadow(3px 3px 8px grey);
+}
+
+.serviceicondiv{
+    color: white;
+    background-color: var(--primarycolor);
+    display: inline-block;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.servicetitle{
+    font-size: 1.75rem;
+    margin: 20px 0px;
+}
+
+.servicefeature{
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+
+.servicefeatureicon{
+    font-size: 1rem;
+}
